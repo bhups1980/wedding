@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -172,8 +173,6 @@
       }
     }
 
-    /* HERO */
-
     .hero {
       position: relative;
       isolation: isolate;
@@ -325,8 +324,6 @@
       color: var(--wine);
     }
 
-    /* COUNTDOWN */
-
     .countdown {
       width: min(760px, calc(100% - 34px));
       margin: -28px auto 74px;
@@ -462,8 +459,6 @@
       text-underline-offset: 4px;
     }
 
-    /* TIMELINE */
-
     .timeline {
       position: relative;
       max-width: 820px;
@@ -509,8 +504,6 @@
       margin: 0;
       color: var(--muted);
     }
-
-    /* TRAVEL */
 
     .travel-panel {
       background: linear-gradient(
@@ -559,8 +552,6 @@
       margin: .45rem 0;
       color: rgba(255,255,255,.83);
     }
-
-    /* RSVP */
 
     .notice {
       margin: 0 auto 28px;
@@ -860,8 +851,6 @@
       <i class="petal"></i>
     </div>
 
-    <!-- HERO -->
-
     <header class="hero">
 
       <div class="hero-inner">
@@ -923,8 +912,6 @@
 
     </header>
 
-    <!-- COUNTDOWN -->
-
     <div class="countdown" aria-label="Countdown to the wedding">
 
       <div>
@@ -950,8 +937,6 @@
     </div>
 
     <main>
-
-      <!-- WEEKEND -->
 
       <section id="weekend" class="reveal-on-scroll">
 
@@ -1021,9 +1006,9 @@
               </h3>
 
               <p>
-                Our wedding celebration will begin at approximately
-                11:00 and continue through the evening, finishing
-                around 23:00.
+                Our wedding celebration begins at 11:00 with welcome
+                drinks and continues throughout the day and into the
+                evening.
               </p>
 
               <address class="address">
@@ -1053,7 +1038,7 @@
 
       </section>
 
-      <!-- WEDDING DAY TIMELINE -->
+      <!-- WEDDING DAY AGENDA -->
 
       <section class="reveal-on-scroll">
 
@@ -1077,41 +1062,74 @@
           <div class="timeline">
 
             <div class="timeline-item">
-
-              <h3>
-                11:00 · Guests arrive
-              </h3>
-
+              <h3>11:00 · Venue opens &amp; welcome drinks</h3>
               <p>
-                Please plan to be at Robacher’s Watermolen in good
-                time so we can begin together.
+                The venue opens from 11:00. Join us for light welcome
+                drinks and settle in before the celebrations begin.
               </p>
-
             </div>
 
             <div class="timeline-item">
-
-              <h3>
-                Wedding celebration
-              </h3>
-
+              <h3>12:30 · Ceremony introductions</h3>
               <p>
-                Ceremony, food, drinks, speeches, dancing and plenty
-                of time to celebrate.
+                Guests will be invited to gather as we begin the formal
+                introductions and prepare for the marriage ceremony.
               </p>
-
             </div>
 
             <div class="timeline-item">
-
-              <h3>
-                23:00 · Finish
-              </h3>
-
+              <h3>13:00 · Marriage ceremony</h3>
               <p>
-                The formal celebrations will wrap up at around 11pm.
+                Our marriage ceremony begins, followed by photographs
+                with family and friends.
               </p>
+            </div>
 
+            <div class="timeline-item">
+              <h3>14:00 · Lunch &amp; free bar opens</h3>
+              <p>
+                Lunch will be served and the free bar will officially
+                open for the afternoon.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <h3>15:00 · Speeches</h3>
+              <p>
+                A few words, stories and hopefully not too many
+                embarrassing moments.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <h3>16:30 · Thank yous</h3>
+              <p>
+                A moment for us to thank our families, friends and
+                everyone who has helped make the day possible.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <h3>17:30 · Evening meal</h3>
+              <p>
+                Time to sit down together again and enjoy the evening
+                meal.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <h3>18:30 · Cake cutting</h3>
+              <p>
+                We’ll cut the wedding cake and get ready to move into
+                the evening celebrations.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <h3>19:00 · Party until late</h3>
+              <p>
+                Music, dancing, drinks and celebrations into the night.
+              </p>
             </div>
 
           </div>
@@ -1283,8 +1301,6 @@
               method="POST"
             >
 
-              <!-- FORM EMAIL SETTINGS -->
-
               <input
                 type="hidden"
                 name="_subject"
@@ -1297,7 +1313,6 @@
                 value="table"
               />
 
-              <!-- Spam protection -->
               <input
                 type="text"
                 name="_honey"
@@ -1469,8 +1484,6 @@
 
     </main>
 
-    <!-- FOOTER -->
-
     <footer>
 
       <p class="footer-script">
@@ -1491,8 +1504,6 @@
     </footer>
 
   </div>
-
-  <!-- EXTRA ATTENDEE TEMPLATE -->
 
   <template id="attendeeTemplate">
 
@@ -1551,8 +1562,6 @@
 
   <script>
 
-    /* COUNTDOWN */
-
     const weddingDate =
       new Date("2027-08-07T11:00:00+02:00");
 
@@ -1608,9 +1617,6 @@
 
     setInterval(tick, 1000);
 
-
-    /* SCROLL ANIMATION */
-
     const observer =
       new IntersectionObserver(
 
@@ -1644,9 +1650,6 @@
         el => observer.observe(el)
       );
 
-
-    /* ADD EXTRA ATTENDEES */
-
     const attendees =
       document.getElementById("attendees");
 
@@ -1676,9 +1679,6 @@
 
       }
     );
-
-
-    /* ATTENDING YES / NO */
 
     const attendance =
       document.getElementById("attendance");
@@ -1742,3 +1742,4 @@
 
 </body>
 </html>
+```
