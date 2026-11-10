@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#f6eadf"/>
+  <path d="M18 19c8-9 23-6 23 5 0 10-12 18-9 23" fill="none" stroke="#74131c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M26 43c6-2 14-1 20 3" fill="none" stroke="#74131c" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="47" cy="18" r="5" fill="#d8a183"/>
+</svg>
